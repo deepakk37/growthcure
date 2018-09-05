@@ -170,6 +170,12 @@ nav.navbar {
 .fontSize{
   font-size: 26px!important;
 }
+nav.navbar a.nav-link {
+    /* color: #777; */
+    /* font-style: italic; */
+    font-size: 20px;
+    border-bottom: 1px solid transparent !important;
+}
 @media only screen and (max-width: 600px) {
 	.textcenter {
 		text-align: center!important;

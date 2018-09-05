@@ -99,11 +99,11 @@ nav.navbar {
   box-shadow: 0 1px 0 #ddd;
 }
 
-nav.navbar a.nav-link {
+/*nav.navbar a.nav-link {
   color: #777;
   font-style: italic;
   border-bottom: 1px solid transparent;
-}
+}*/
 
 nav.navbar a.nav-link.active, nav.navbar a.nav-link:hover, nav.navbar a.nav-link:focus {
   color: #333;
@@ -1073,7 +1073,7 @@ body {
 }
 
 a {
-  color: #333;
+  color: #000;
   text-decoration: none;
 }
 
