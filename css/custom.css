@@ -199,33 +199,28 @@ section {
  .aligntextinImg4 { 
   margin-left: -58px;
  }
- @media (min-width: 992px){
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem !important;
-}
-img {
-    /* vertical-align: middle; */
-    border-style: none !important;
+.customa {
+  color:white;
 }
 @media only screen and (max-width: 600px) {
-	.textcenter {
-		text-align: center!important;
-		padding-top: 10%;
-	}
-	.textright{
-	text-align: center!important;
-	margin-left: -1%;
-	}
-	.customfont{
-	font-size:20px;
-	font-family: Playfair Display;
+  .textcenter {
+    text-align: center!important;
+    padding-top: 10%;
+  }
+  .textright{
+  text-align: center!important;
+  margin-left: -1%;
+  }
+  .customfont{
+  font-size:20px;
+  font-family: Playfair Display;
 }
 .h1text {
     text-align: -webkit-center;
     font-size: 26px;
 }
 .marginItem {
-	padding-top: 40px;
+  padding-top: 40px;
 }
 
 .textwrapper {
@@ -234,7 +229,7 @@ img {
     text-align: center;
     font-family: Playfair Display;
     font-size: 54px;
-    line-height: 89px;
+    line-height: 70px;
     font-weight: 400;
 }
 section {
@@ -249,15 +244,8 @@ section {
     letter-spacing: 0.01em;
   }
 }
-@media only screen and (max-width: 600px){
-.textwrapper {
-    opacity: 1;
-    padding-top: 0px;
-    text-align: center;
-    font-family: Playfair Display;
-    font-size: 54px;
-    line-height: 70px;
-    font-weight: 400;
-}
-}
+
+
+
+
 
