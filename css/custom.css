@@ -141,8 +141,28 @@ h2 {
   z-index: 10 !important;
   overflow-y: hidden;
 }
-.textOnImg{
-  margin-left: -237px;
+.textOnImg1{
+  margin-left: -244px;
+  margin-top: 200px;
+  position: absolute;
+  z-index: 100;
+  line-height: 0.5;
+}
+.textOnImg2{
+  margin-left: -285px;
+  margin-top: 200px;
+  position: absolute;
+  z-index: 100;
+  line-height: 0.5;
+}
+.textOnImg3{
+  margin-left: -339px;
+  margin-top: 200px;
+  position: absolute;
+  z-index: 100;
+}
+.textOnImg4{
+  margin-left: -245px;
   margin-top: 200px;
   position: absolute;
   z-index: 100;
@@ -175,6 +195,25 @@ nav.navbar a.nav-link {
     /* font-style: italic; */
     font-size: 20px;
     border-bottom: 1px solid transparent !important;
+}
+
+.aligntextinImg1 { 
+  margin-left: -58px;
+ }
+ .aligntextinImg2 { 
+  margin-left: -27px;
+ }
+ .aligntextinImg3 { 
+  margin-left: 35px;
+ }
+ .aligntextinImg4 { 
+  margin-left: -58px;
+ }
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem !important;
+    padding-left: .5rem !important;
+}
 }
 @media only screen and (max-width: 600px) {
 	.textcenter {
