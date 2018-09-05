@@ -116,7 +116,7 @@ h2 {
   margin-top:80px;
 }
 .heightSet {
-  height:550px;
+  height:576px;
 }
 
 .maxwidth {
@@ -129,6 +129,9 @@ h2 {
 }
 .joinimage{
   opacity: 0.7;
+}
+.pad{
+  padding-top: 153px;
 }
 
 .joinimage:hover {
@@ -209,6 +212,9 @@ nav.navbar a.nav-link {
  .aligntextinImg4 { 
   margin-left: -58px;
  }
+/* .topPadding {
+  padding-top: 25px;
+ }*/
 @media (min-width: 992px){
 .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 1.5rem !important;
@@ -256,5 +262,16 @@ section {
     font-size: 38px;
     letter-spacing: 0.01em;
   }
+}
+@media only screen and (max-width: 600px){
+.textwrapper {
+    opacity: 1;
+    padding-top: 0px;
+    text-align: center;
+    font-family: Playfair Display;
+    font-size: 54px;
+    line-height: 70px;
+    font-weight: 400;
+}
 }
 
