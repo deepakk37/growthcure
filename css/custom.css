@@ -222,6 +222,19 @@ section {
 .marginItem {
   padding-top: 40px;
 }
+  .being {
+    background-color: #3b0086;
+    margin-top: 23px;
+    margin-left: 14%;
+    margin-right: 11%;
+    border-radius: 25px;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    padding: 2%;
+    font-weight: bold;
+  }
 
 .textwrapper {
     opacity: 1;
@@ -245,19 +258,7 @@ section {
   }
 }
 
-.being{
-  background-color: #3b0086;margin-top: 120px; margin-left: 14%; margin-right: 11%;
-  border-radius: 25px;
-  height: auto;
-  color: white;
-  text-align: center;
-  font-size: 20px;
-  padding: 2%;
-  /*padding-bottom: 2%;
-  padding-left: : 3px;
-  padding-right: : 3px;*/
-  font-weight: bold;
-}
+
 .foot-ceo{
   margin-top: 2px;
   text-align: center;
@@ -353,6 +354,19 @@ a.social.linkedin {
   .paddingPixel {
     padding: 0px !important;
   }
+  .being{
+    background-color: #3b0086;margin-top: 23px; margin-left: 14%; margin-right: 11%;
+    border-radius: 25px;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 2%;
+    /*padding-bottom: 2%;
+    padding-left: : 3px;
+    padding-right: : 3px;*/
+    font-weight: bold;
+  }
 }
 .card {
   background-color: #5c3b87;
@@ -362,3 +376,35 @@ a.social.linkedin {
   display:block;
   text-align: center;
 }
+.widthLogo {
+  width: 65%;
+}
+.fontColor{
+  color: white;
+}
+
+
+.parallex {
+  background-image: url("../img/homepage.jpg");
+
+  /* Set a specific height */
+  height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+/*div a:hover {*/
+  /*background-color: white;*/
+/*}*/
