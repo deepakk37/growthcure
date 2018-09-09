@@ -22,11 +22,16 @@
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="owl-carousel/owl.theme.css" rel="stylesheet">
     <style type="text/css">
        body {
         font-family: 'Roboto', sans-serif;
       }
     </style>
+  
+
+
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -172,7 +177,25 @@
       </div>
     </section>
 
-   
+     <div id="owl-demo" class="owl-carousel">
+                
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logo2nd.png" alt="image" class="img-fluid"></h1></div>
+
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logo2nd.png" alt="image" class="img-fluid"></h1></div>
+                <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>
+
+     </div>
+
 
 
   <section id="text1234" class="text-page section-inverse custompadding" style="background-color:000;">
@@ -338,7 +361,7 @@
     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
   </ol>
-  <div style="background-image: url('img/download.svg');height:400px;">
+  <div style="background-image: url('img/download.svg');height:auto;">
   <div class="carousel-inner">
     <div class="carousel-item active imageZoom">
       <div class="being"><p>Growthcure is great to work with and knows how to get a company recognized online. In a short amount of time, we have shot up the charts and are starting to produce consistent online sales.  </p></div> <div class="foot-ceo">Arpit Gupta, CEO ApnaExpert. </div>
@@ -402,5 +425,92 @@
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="js/front.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"/></script>
+    -->
+      
+    <script src="owl-carousel/owl.carousel.js"></script>
+
+
+    <!-- Demo -->
+
+    <style>
+    #owl-demo .item{
+    /*    background: #3fbf79;*/
+        padding: 30px 0px;
+        margin: 10px;
+        color: #FFF;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        text-align: center;
+    }
+    .customNavigation{
+      text-align: center;
+    }
+    .customNavigation a{
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    </style>
+
+
+    <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-demo");
+      console.log("running!!!")
+
+      owl.owlCarousel({
+      items : 10, //10 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // 3 items betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0;
+      itemsMobile : false,// itemsMobile disabled - inherit from itemsTablet option
+      // loop:true,
+      // autoplay:true,
+      // autoplaySpeed:5000,
+      // autoplayTimeout: 5000
+
+       loop:true,
+       margin:10,
+       autoplay:3000,
+       autoplayTimeout:1000,
+       autoplayHoverPause:true,
+       autoplaySpeed:5000 
+      
+      
+      });
+
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+      owl.trigger('owl.play',5000);
+      $(".play").click(function(){
+        owl.trigger('owl.play',1000);
+      })
+      $(".stop").click(function(){
+        owl.trigger('owl.stop');
+      })
+
+
+    });
+    </script>
+
+
+   <!--  <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+
+    <script src="../assets/js/google-code-prettify/prettify.js"></script>
+    <script src="../assets/js/application.js"></script> -->
+</script>
   </body>
 </html>
