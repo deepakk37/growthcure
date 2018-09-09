@@ -408,3 +408,11 @@ a.social.linkedin {
 /*div a:hover {*/
   /*background-color: white;*/
 /*}*/
+
+.servicehead{
+  font-size: 2.1rem;
+  font-family:inherit;
+}
+.h3service{
+  font-size: 1.2rem;
+}
