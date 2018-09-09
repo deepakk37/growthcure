@@ -46,6 +46,18 @@
               <li class="nav-item"><a href="index.html" class="nav-link link-scroll fontColor">Home</a></li>
               <!-- <li class="nav-item"><a href="aboutus.html#portfolio" class="nav-link link-scroll">About </a></li> -->
               <!-- <li class="nav-item"><a href="services.html" class="nav-link link-scroll">Services</a></li> -->
+              <li class="dropdown">
+              <a href="services.html" class="nav-link link-scroll" data-toggle="dropdown">Services <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link link-scroll" href="services.html">Action</a></li>
+                <li><a class="nav-link link-scroll" href="#">Another action</a></li>
+                <li><a class="nav-link link-scroll"  href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a class="nav-link link-scroll"href="#">Separated link</a></li>
+                <li class="divider"></li>
+                <li><a class="nav-link link-scroll" href="#">One more separated link</a></li>
+              </ul>
+            </li>
               <li class="nav-item"><a href="portfolio.html" class="nav-link link-scroll">Portfolio</a></li>
               <!-- <li class="nav-item"><a href="#text" class="nav-link link-scroll">Text</a></li> -->
               <li class="nav-item"><a href="contactus.html" class="nav-link link-scroll">Contact</a></li>
@@ -503,6 +515,22 @@
 
     });
     </script>
+    <script type="text/javascript">
+  $(function(){
+    $(".dropdown").hover(            
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+                //$(this).toggleClass('open');
+                //$('b', this).toggleClass("caret caret-up");                
+            },
+            function() {
+                $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+                //$(this).toggleClass('open');
+                //$('b', this).toggleClass("caret caret-up");                
+            });
+    });
+     
+</script>
 
 
    <!--  <script src="../assets/js/bootstrap-collapse.js"></script>
