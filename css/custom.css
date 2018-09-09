@@ -8,7 +8,7 @@
     font-weight: 400;
 }
 .fontColorBlue {
-	color: #3e92cc;
+	color: #3e92cc !important;
 }
 .alignCenter {
 	text-align: center;
@@ -22,7 +22,6 @@
 }
 .customfont{
 	font-size: 20px;
-	font-family: Playfair Display;
 }
 
 button:hover {
@@ -32,9 +31,7 @@ button:hover {
 	box-shadow: inset 0 0 0 3px #3e92cc;
 
 }
-h1 {
-	font-family: Playfair Display;
-}
+
 .section-inverse {
     color: #fff;
     background: #000;
@@ -216,7 +213,6 @@ section {
   }
   .customfont{
   font-size:20px;
-  font-family: Playfair Display;
 }
 .h1text {
     text-align: -webkit-center;
@@ -243,7 +239,6 @@ section {
     opacity: 1;
     padding-top: 0px;
     text-align: center;
-    font-family: Playfair Display;
     font-size: 54px;
     line-height: 70px;
     font-weight: 400;
@@ -388,7 +383,7 @@ a.social.linkedin {
 
 
 .parallex {
-  background-image: url("../img/homepage.jpg");
+  background-image: url("../img/testimonial.jpg");
 
   /* Set a specific height */
   height: 500px;
@@ -398,15 +393,8 @@ a.social.linkedin {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  z-index: 4;
 }
-
-
-
-
-
-
-
-
 
 /*div a:hover {*/
   /*background-color: white;*/
@@ -414,14 +402,17 @@ a.social.linkedin {
 
 .servicehead{
   font-size: 2.1rem;
-  font-family:inherit;
 }
 .h3service{
   font-size: 1.2rem;
 }
-.imgser{ 
+.imgser{
   height:100px;
   width:100px;
   margin-top: 18px;
   border-radius:50px;
+}
+#text12345{
+  background-color: #000;
+  z-index: 5;
 }
