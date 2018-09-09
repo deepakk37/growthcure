@@ -207,6 +207,9 @@ section {
     text-align: center!important;
     padding-top: 10%;
   }
+  .paddingTopad{
+      padding-top: 50px;
+  }
   .textright{
   text-align: center!important;
   margin-left: -1%;
@@ -400,11 +403,11 @@ a.social.linkedin {
   /*background-color: white;*/
 /*}*/
 
-.servicehead{
-  font-size: 2.1rem;
-}
+/*.servicehead{*/
+  /*font-size: 2.1rem;*/
+/*}*/
 .h3service{
-  font-size: 1.2rem;
+  font-size: 1.8rem;
 }
 .imgser{
   height:100px;
@@ -415,4 +418,16 @@ a.social.linkedin {
 #text12345{
   background-color: #000;
   z-index: 5;
+}
+.paddingTop{
+  padding-bottom: 80px;
+}
+
+.textwrapper1 {
+  opacity: 1;
+  padding-top: 0px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 89px;
+  font-weight: 400;
 }
