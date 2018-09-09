@@ -1,10 +1,10 @@
-/* 
-========================================= 
-========================================= 
+/*
+=========================================
+=========================================
 
 Bootstrapious Boilerplate Template
 
-========================================= 
+=========================================
 ========================================= */
 /*
 *
@@ -91,13 +91,13 @@ NAVBAR
 =====================
 *
 */
-nav.navbar {
-  background: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  -webkit-box-shadow: 0 1px 0 #ddd;
-  box-shadow: 0 1px 0 #ddd;
-}
+/*nav.navbar {*/
+  /*background: #fff;*/
+  /*padding-top: 5px;*/
+  /*padding-bottom: 5px;*/
+  /*-webkit-box-shadow: 0 1px 0 #ddd;*/
+  /*box-shadow: 0 1px 0 #ddd;*/
+/*}*/
 
 nav.navbar a.nav-link {
 /*  color: #777;

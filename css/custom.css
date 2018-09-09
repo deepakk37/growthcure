@@ -187,16 +187,16 @@ section {
 .fontSize{
   font-size: 20px!important;
 }
-.aligntextinImg1 { 
+.aligntextinImg1 {
   margin-left: -58px;
  }
- .aligntextinImg2 { 
+ .aligntextinImg2 {
   margin-left: -27px;
  }
- .aligntextinImg3 { 
+ .aligntextinImg3 {
   margin-left: 35px;
  }
- .aligntextinImg4 { 
+ .aligntextinImg4 {
   margin-left: -58px;
  }
 .customa {
@@ -246,7 +246,7 @@ section {
 }
 
 .being{
-  background-color: #3b0086;margin-top: 120px; margin-left: 14%; margin-right: 11%; 
+  background-color: #3b0086;margin-top: 120px; margin-left: 14%; margin-right: 11%;
   border-radius: 25px;
   height: auto;
   color: white;
@@ -265,5 +265,10 @@ section {
   color: white;
 }
 
-
+nav.navbar {
+  z-index: 3 !important;
+}
+#intro{
+  padding-top:15px !important;
+}
 

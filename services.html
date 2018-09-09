@@ -31,12 +31,12 @@
       }
 
       .caret-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid rgba(0, 0, 0, 0);
     border-right: 4px solid rgba(0, 0, 0, 0);
     border-bottom: 4px solid;
-    
+
     display: inline-block;
     margin-left: 2px;
     vertical-align: middle;
@@ -47,35 +47,32 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-  <header class="header">
-    <nav class="navbar navbar-expand-lg">
-      <div class="container"><a href="#intro" class="navbar-brand link-scroll"><img src="img/logo.png" alt="" class="img-fluid"></a>
-        <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
-        <div id="navbarSupportedContent" class="collapse navbar-collapse fontSize">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="index.html" class="nav-link link-scroll">Home</a></li>
-            <!-- <li class="nav-item"><a href="aboutus.html#portfolio" class="nav-link link-scroll">About </a></li> -->
-            <li class="dropdown">
-          <a href="services.html" class="nav-link link-scroll" data-toggle="dropdown">Services <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a class="nav-link link-scroll" href="#">Action</a></li>
-            <li><a class="nav-link link-scroll" href="#">Another action</a></li>
-            <li><a class="nav-link link-scroll"  href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a class="nav-link link-scroll"href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a class="nav-link link-scroll" href="#">One more separated link</a></li>
-          </ul>
-        </li>
-            <li class="nav-item"><a href="portfolio.html" class="nav-link link-scroll">Portfolio</a></li>
-            <!-- <li class="nav-item"><a href="#text" class="nav-link link-scroll">Text</a></li> -->
-            <li class="nav-item"><a href="contactus.html" class="nav-link link-scroll">Contact</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
     <section id="intro" style="background-image: url('img/ein-steig.jpg');" class="intro">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container"><a href="index.html" class="navbar-brand link-scroll"><img src="img/logo.png"></a>
+          <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
+          <div id="navbarSupportedContent" class="collapse navbar-collapse fontSize">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a href="index.html" class="nav-link link-scroll fontColor">Home</a></li>
+              <li class="dropdown">
+                <a href="services.html" class="nav-link link-scroll" data-toggle="dropdown">Services <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link link-scroll" href="services.html">Action</a></li>
+                  <li><a class="nav-link link-scroll" href="#">Another action</a></li>
+                  <li><a class="nav-link link-scroll"  href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a class="nav-link link-scroll"href="#">Separated link</a></li>
+                  <li class="divider"></li>
+                  <li><a class="nav-link link-scroll" href="#">One more separated link</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a href="portfolio.html" class="nav-link link-scroll">Portfolio</a></li>
+              <!-- <li class="nav-item"><a href="#text" class="nav-link link-scroll">Text</a></li> -->
+              <li class="nav-item"><a href="contactus.html" class="nav-link link-scroll">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
       <div class="overlay"></div>
       <div class="content">
         <div class="container clearfix">
@@ -96,7 +93,7 @@
           <div class="col-lg-8">
             <h3 class="heading alignText">Search - Youtube - Playstore - Display - Shopping</h3>
             <p class="lead italic">Be everywhere via Google!</p>
-            <p>Whether you want to generate leads/sales, do branding or get App Downloads, Google probably offers the best solution everytime. Google Adwords is vast and has it’s own benefits & limitations (high competition, low search volumes etc). But you just need to Relax! We are best at creating combination of strategies using Google Adwords. It is our FORTE and we know how to make most of it. 
+            <p>Whether you want to generate leads/sales, do branding or get App Downloads, Google probably offers the best solution everytime. Google Adwords is vast and has it’s own benefits & limitations (high competition, low search volumes etc). But you just need to Relax! We are best at creating combination of strategies using Google Adwords. It is our FORTE and we know how to make most of it.
 </p>
           </div>
           <div class="col-lg-4">
@@ -293,19 +290,19 @@
     <script src="js/front.js"></script>
     <script type="text/javascript">
   $(function(){
-    $(".dropdown").hover(            
+    $(".dropdown").hover(
             function() {
                 $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
                 //$(this).toggleClass('open');
-                //$('b', this).toggleClass("caret caret-up");                
+                //$('b', this).toggleClass("caret caret-up");
             },
             function() {
                 $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
                 //$(this).toggleClass('open');
-                //$('b', this).toggleClass("caret caret-up");                
+                //$('b', this).toggleClass("caret caret-up");
             });
     });
-     
+
 </script>
   </body>
 </html>
