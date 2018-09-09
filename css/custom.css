@@ -180,6 +180,9 @@ section {
   background-color: #3b0086!important;
   color: white;
 }
+.customColorw{
+   color: white !important;
+}
 
 .paddingTop {
     padding-top: 10px !important;
@@ -415,4 +418,10 @@ a.social.linkedin {
 }
 .h3service{
   font-size: 1.2rem;
+}
+.imgser{ 
+  height:100px;
+  width:100px;
+  margin-top: 18px;
+  border-radius:50px;
 }
