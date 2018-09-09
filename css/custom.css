@@ -362,3 +362,10 @@ a.social.linkedin {
   display:block;
   text-align: center;
 }
+.servicehead{
+  font-size: 2.1rem;
+  font-family:inherit;
+}
+.h3service{
+  font-size: 1.2rem;
+}

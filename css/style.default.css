@@ -1899,6 +1899,7 @@ code {
 
 .card-body {
   padding: 1.25rem;
+  height:350px;
 }
 
 .card-title {
