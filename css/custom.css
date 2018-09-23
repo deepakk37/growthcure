@@ -204,12 +204,20 @@ section {
   color:white;
 }
 @media only screen and (max-width: 600px) {
+  .textwrapper1 {
+    opacity: 1;
+    padding-top: 0px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 80px;
+    font-weight: 400;
+  }
   .textcenter {
     text-align: center!important;
     padding-top: 10%;
   }
   .paddingTopad{
-      padding-top: 20px;
+      padding-top: 25px;
   }
   .textright{
   text-align: center!important;
@@ -431,7 +439,7 @@ a.social.linkedin {
   padding-top: 0px;
   text-align: center;
   font-size: 50px;
-  line-height: 89px;
+  line-height: 80px;
   font-weight: 400;
 }
 .alignText{
