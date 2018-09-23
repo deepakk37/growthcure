@@ -258,6 +258,10 @@ section {
     font-size: 38px;
     letter-spacing: 0.01em;
   }
+  .alignCenter {
+    text-align: center;
+    margin-top:20px;
+  }
 }
 
 
