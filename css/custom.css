@@ -12,6 +12,7 @@
 }
 .alignCenter {
 	text-align: center;
+  margin-top:60px;
 }
 
 .tiltbutton-wrap {
@@ -430,4 +431,8 @@ a.social.linkedin {
   font-size: 50px;
   line-height: 89px;
   font-weight: 400;
+}
+.alignText{
+  text-align:right;
+  margin-top:-60px;
 }
