@@ -279,8 +279,6 @@ nav.navbar {
   padding-top:15px !important;
 }
 
-element.style {
-}
 .carousel-indicators {
   position: absolute;
   right: 0;
@@ -442,4 +440,8 @@ a.social.linkedin {
 }
 .textAlignToLeft{
   text-align:left;
+}
+
+.alignTextAd{
+  margin-top:-60px;
 }
