@@ -1988,3 +1988,11 @@ code {
 .dropdown-menu a:hover{
   color: black;
 }
+.hrefHover a:hover{
+  text-decoration: none !important;
+}
+
+.buttonCss a:hover{
+  text-decoration: none !important;
+  color:black;
+}
