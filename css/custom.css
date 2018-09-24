@@ -455,3 +455,11 @@ a.social.linkedin {
 .alignTextAd{
   margin-top:-60px;
 }
+.buttonCss{
+  border: 1px solid;
+}
+
+.hrefHover a:hover{
+  color: black !important;
+  text-decoration: none !important;
+}
