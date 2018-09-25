@@ -1075,10 +1075,10 @@ a {
   text-decoration: none;
 }
 
-a:hover, a:focus {
-  color: #fff;
-  text-decoration: none;
-}
+/*a:hover, a:focus {*/
+  /*!*color: #fff;*!*/
+  /*text-decoration: none !important;*/
+/*}*/
 
 h1,
 h2,
@@ -1994,5 +1994,5 @@ code {
 
 .buttonCss a:hover{
   text-decoration: none !important;
-  color:black;
+  color:black !important;
 }

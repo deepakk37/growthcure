@@ -85,7 +85,7 @@
           </div>
           <div class="row" style="padding-top: 30px;">
             <div class="col-lg-6 col-md-6 mx-auto alignCenter tiltbutton-wrap">
-              <button type="button" style="background-color: #3e92cc;" class="btn btn-primary btn-lg"><span class="customfont"><a class="customa" href="contactus.html">LET'S TALK</a></span></button>
+              <button type="button" style="background-color: #3e92cc;" data-target="#exampleModal" data-whatever="@mdo" data-toggle="modal" class="btn btn-primary btn-lg"><span class="customfont">LET'S TALK</span></button>
 <!--             <a class="nectar-button jumbo extra-color-1 tilt instance-1" href="https://niftymarketing.com/contact/" data-color-override="false" data-hover-color-override="false" data-hover-text-color-override="#fff" style="visibility: visible;"><span>LET'S TALK</span></a> -->
             </div>
           </div>
@@ -93,6 +93,39 @@
       </div>
     </section>
     <!-- intro end-->
+
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Open modal for @mdo</button>-->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@fat">Open modal for @fat</button>-->
+    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Open modal for @getbootstrap</button>-->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Contact Us</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Email Id:</label>
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Message:</label>
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Send message</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="owl-demo" class="owl-carousel">
       <div class="item"><h1><img src="img/logoOne.png" alt="image" class="img-fluid"></h1></div>

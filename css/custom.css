@@ -396,7 +396,7 @@ a.social.linkedin {
   width: 80%;
 }
 .fontColor{
-  color: white;
+  color: white !important;
 }
 
 
@@ -457,8 +457,13 @@ a.social.linkedin {
 }
 .buttonCss{
   border: 1px solid;
+  color: white !important;
 }
 
 .hrefHover a:hover{
   text-decoration: none !important;
+}
+.buttonCssBlack{
+  border: 1px solid;
+  color: Black !important;
 }
