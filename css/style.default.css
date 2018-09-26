@@ -492,12 +492,12 @@ STYLE SWITCHER FOR DEMO
   border-color: #333;
 }
 
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-.show > .btn-primary.dropdown-toggle {
-  color: #fff;
-  background-color: #1a1a1a;
-  border-color: #131313;
-}
+/*.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,*/
+/*.show > .btn-primary.dropdown-toggle {*/
+  /*color: #fff;*/
+  /*background-color: #1a1a1a;*/
+  /*border-color: #131313;*/
+/*}*/
 
 .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
 .show > .btn-primary.dropdown-toggle:focus {
