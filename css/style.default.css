@@ -133,20 +133,6 @@ INTRO SECTION
 =====================
 *
 */
-.intro {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  color: #fff;
-  background-color: #111;
-  min-height: 600px;
-  padding: 0;
-  background-size: cover;
-  background-position: center center;
-  overflow: hidden;
-  background-attachment: fixed;
-  filter: brightness(90%);
-}
 
 .intro h1, .intro h2, .intro h3, .intro p {
   color: #fff;
