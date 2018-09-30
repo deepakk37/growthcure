@@ -285,7 +285,7 @@ section {
 }
 
 nav.navbar {
-  z-index: 3 !important;
+  z-index: 12 !important;
 }
 #intro{
   padding-top:15px !important;
@@ -523,4 +523,14 @@ a:hover {
   overflow: hidden;
   background-attachment: fixed;
   /* filter: brightness(90%); */
+}
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 1.5rem;
+    padding-left: .5rem;
+  }
+}
+
+.customClassButton {
+  color: #fff !important;
 }
