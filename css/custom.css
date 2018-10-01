@@ -207,6 +207,9 @@ section {
   .servicehead{
     margin-top: 50px;
   }
+    .topPaddingInContact{
+        padding-top: 105px;
+    }
 
   .textwrapper1 {
     opacity: 1;
@@ -280,7 +283,6 @@ section {
 .foot-ceo{
   margin-top: 2px;
   text-align: center;
-  font-weight: bold;
   color: white;
 }
 
@@ -381,7 +383,6 @@ a.social.linkedin {
     /*padding-bottom: 2%;
     padding-left: : 3px;
     padding-right: : 3px;*/
-    font-weight: bold;
   }
 }
 .card {

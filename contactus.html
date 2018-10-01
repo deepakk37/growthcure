@@ -68,8 +68,7 @@
       <div class="content">
         <div class="container clearfix">
           <div class="row">
-            <div class="col-lg-12 col-md-12 mx-auto alignCenter">
-<!--               <p class="italic">Oh, hello, nice to meet you!</p> -->
+            <div class="col-lg-12 col-md-12 mx-auto alignCenter topPaddingInContact">
               <span class="textwrapper">Fill Out The Form. You
  <span class="fontColorBlue">Know</span> You Want To.</span>
 <!--               <p class="italic">I am a ready to be your portfolio, telling your stories and short presentations.</p> -->
@@ -101,30 +100,36 @@
 
             <div class="row">
               <div class="col-lg-12">
-                <form id="contact-form" method="post" action="contactus.html" class="contact-form">
+                <form id="contact-form" class="contact-form">
                   <div class="form-row">
                     <div class="form-group col-md-6">
-                      <label for="inputEmail4">Name</label>
-                      <input type="text" class="form-control" id="inputEmail4" placeholder="Name">
+                      <label for="name">Name</label>
+                      <input type="text" class="form-control" id="name" placeholder="Name" required>
                     </div>
                     <div class="form-group col-md-6">
-                      <label for="inputPassword4">Email</label>
-                      <input type="email" class="form-control" id="inputPassword4" placeholder="Email">
+                      <label for="email">Email</label>
+                      <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        <div class="invalidemail" style="display:none;color:red;">Please enter the valid email</div>
                     </div>
                   </div>
+                    <div class="form-group">
+                        <label for="phoneno">Phone Number</label>
+                        <input type="text" class="form-control" id="phoneno" placeholder="Phone Number">
+                    </div>
                   <div class="form-group">
-                    <label for="inputAddress">Comapny</label>
+                    <label for="company">Comapny</label>
                     <input type="text" class="form-control" id="company" placeholder="Company">
                   </div>
                   <div class="form-group">
-                    <label for="inputAddress">Message</label>
-                    <textarea class="form-control" id="inputAddress" placeholder="Message"></textarea>
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
                   </div>
                   <div class="form-group">
-                    <label for="inputAddress2">Where did you hear about us?</label>
-                    <input type="text" class="form-control" id="inputAddress2">
+                    <label for="source">Where did you hear about us?</label>
+                    <input type="text" class="form-control" id="source">
                   </div>
-                  <button type="submit" class="btn btn-primary align-items-center customClassButton">Sign in</button>
+                  <button type="button" onclick="apiCall()" class="btn btn-primary align-items-center customClassButton">Sign in</button>
+                    <div class="registration" style="display:none;color:red;">Thanks for registration we will get back to you </div>
                 </form>
               </div>
             </div>
@@ -165,5 +170,38 @@
     <script src="vendor/lightbox2/js/lightbox.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;amp;sensor=false"> </script>
     <script src="js/front.js"></script>
+    <script language="javascript">
+
+        function apiCall() {
+            var email = document.getElementById("email").value;
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+            {
+                var name = document.getElementById("name").value;
+                var phone =document.getElementById("phoneno").value;
+
+                var message = document.getElementById("message").value;
+                var company =document.getElementById("company").value;
+                var source = document.getElementById("source").value;
+                var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,"source":source}
+                var xhr = new XMLHttpRequest();
+                xhr.open("POST", "https://www.growthcure.com/user/register", true);
+                xhr.send(JSON.stringify(myKeyVals));
+                document.getElementById("name").value = "";
+                document.getElementById("phoneno").value = "";
+                document.getElementById("email").value = ""
+                $(".registration").show();
+                setTimeout(function() {
+                    $(".registration").fadeOut(1500);
+                }, 3000);
+
+            }else{
+                $(".invalidemail").show();
+                setTimeout(function() {
+                    $(".invalidemail").fadeOut(1500);
+                }, 3000);
+            }
+
+        }
+    </script>
   </body>
 </html>
