@@ -207,6 +207,9 @@ section {
   .servicehead{
     margin-top: 50px;
   }
+    .makeDivCenter{
+        padding: 4px 0px 21px 70px;
+    }
     .topPaddingInContact{
         padding-top: 105px;
     }
@@ -372,6 +375,7 @@ a.social.linkedin {
   .paddingPixel {
     padding: 0px !important;
   }
+
   .being{
     background-color: #3b0086;margin-top: 23px; margin-left: 14%; margin-right: 11%;
     border-radius: 25px;
