@@ -464,6 +464,7 @@
     <script language="javascript">
 
         function apiCall() {
+            alert("hi")
             var email = document.getElementById("email").value;
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
             {
@@ -472,14 +473,15 @@
 
                 var message = document.getElementById("message").value;
                 var company =document.getElementById("company").value;
-                var source = document.getElementById("source").value;
-                var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,"source":source}
+                var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,}
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", "https://www.growthcure.com/user/register", true);
                 xhr.send(JSON.stringify(myKeyVals));
                 document.getElementById("name").value = "";
                 document.getElementById("phoneno").value = "";
                 document.getElementById("email").value = ""
+                document.getElementById("message").value = ""
+                document.getElementById("company").value = ""
                 $(".registration").show();
                 setTimeout(function() {
                     $(".registration").fadeOut(1500);
