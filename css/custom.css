@@ -204,6 +204,10 @@ section {
   color:white;
 }
 @media only screen and (max-width: 600px) {
+    .card-body {
+        padding: 2.7rem;
+        height: 340px;
+    }
   .servicehead{
     margin-top: 50px;
   }
