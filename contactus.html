@@ -101,35 +101,31 @@
             <div class="row">
               <div class="col-lg-12">
                 <form id="contact-form" class="contact-form">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="form-group">
                       <label for="name">Name</label>
                       <input type="text" class="form-control" id="name" placeholder="Name" required>
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="form-group">
                       <label for="email">Email</label>
                       <input type="email" class="form-control" id="email" placeholder="Email" required>
                         <div class="invalidemail" style="display:none;color:red;">Please enter the valid email</div>
                     </div>
-                  </div>
+
                     <div class="form-group">
                         <label for="phoneno">Phone Number</label>
                         <input type="text" class="form-control" id="phoneno" placeholder="Phone Number">
                     </div>
                   <div class="form-group">
-                    <label for="company">Comapny</label>
+                    <label for="company">Company</label>
                     <input type="text" class="form-control" id="company" placeholder="Company">
                   </div>
                   <div class="form-group">
                     <label for="message">Message</label>
-                    <textarea class="form-control" id="message" placeholder="Message"></textarea>
+                    <textarea class="form-control" id="message" placeholder="Message(Optional)"></textarea>
                   </div>
                   <div class="form-group">
-                    <label for="source">Where did you hear about us?</label>
-                    <input type="text" class="form-control" id="source">
+                  <button type="button" onclick="apiCall()" class="btn btn-primary align-items-center customClassButton">Submit</button>
                   </div>
-                  <button type="button" onclick="apiCall()" class="btn btn-primary align-items-center customClassButton">Sign in</button>
-                    <div class="registration" style="display:none;color:green;font-weight: bold">Thanks for registration we will get back to you </div>
                 </form>
               </div>
             </div>
@@ -189,10 +185,11 @@
                 document.getElementById("name").value = "";
                 document.getElementById("phoneno").value = "";
                 document.getElementById("email").value = ""
-                $(".registration").show();
-                setTimeout(function() {
-                    $(".registration").fadeOut(1500);
-                }, 3000);
+                swal(
+                    'Thanks!',
+                    'for reaching us',
+                    'success'
+                );
 
             }else{
                 $(".invalidemail").show();
