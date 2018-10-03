@@ -539,3 +539,7 @@ a:hover {
 .customClassButton {
   color: #fff !important;
 }
+
+.backImage{
+    background: transparent url('../img/hompagejpg.jpg') no-repeat scroll 0% 0% / cover;
+}
