@@ -557,7 +557,7 @@ a:hover {
     background: transparent url('../img/app.jpg') no-repeat scroll 0% 0% / cover;
 }
 .brandingImg{
-    background: transparent url('../img/branding.png') no-repeat scroll 0% 0% / cover;
+    background: transparent url('../img/branding.jpg') no-repeat scroll 0% 0% / cover;
 }
 .casestudyImg{
     background: transparent url('../img/ein-steig.jpg') no-repeat scroll 0% 0% / cover;
@@ -593,7 +593,7 @@ a:hover {
     background: transparent url('../img/analytics.jpg') no-repeat scroll 0% 0% / cover;
 }
 .imageInsection {
-    background-image:url('../img/backG.jpg');
+    background-image:url('../img/back.jpg');
     /*background: transparent url('../img/backG.jpg') no-repeat scroll 0% 0% / cover;*/
     height: auto;
 }
