@@ -465,15 +465,14 @@
     <script language="javascript">
 
         function apiCall() {
-            alert("hi")
             var email = document.getElementById("email").value;
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
             {
-                var name = document.getElementById("name").value;
-                var phone =document.getElementById("phoneno").value;
+                var name = document.getElementById("name").value || "";
+                var phone =document.getElementById("phoneno").value || "";
 
-                var message = document.getElementById("message").value;
-                var company =document.getElementById("company").value;
+                var message = document.getElementById("message").value || "";
+                var company =document.getElementById("company").value || "";
                 var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,}
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", "https://www.growthcure.com/user/register", true);
