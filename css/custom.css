@@ -543,3 +543,53 @@ a:hover {
 .backImage{
     background: transparent url('../img/hompagejpg.jpg') no-repeat scroll 0% 0% / cover;
 }
+.aboutImg{
+    background: transparent url('../img/ein-steig.jpg') no-repeat scroll 0% 0% / cover;
+}
+.apnaexpertImg{
+    background: transparent url('../img/apnaexpert.png') no-repeat scroll 0% 0% / cover;
+}
+.appImg{
+    background: transparent url('../img/app.jpg') no-repeat scroll 0% 0% / cover;
+}
+.brandingImg{
+    background: transparent url('../img/branding.png') no-repeat scroll 0% 0% / cover;
+}
+.casestudyImg{
+    background: transparent url('../img/ein-steig.jpg') no-repeat scroll 0% 0% / cover;
+}
+.contactImg{
+    background: transparent url('../img/contactpage.jpg') no-repeat scroll 0% 0% / cover;
+}
+.fbinstaImg{
+    background: transparent url('../img/fbinsta.jpg') no-repeat scroll 0% 0% / cover;
+}
+.generationImg{
+    background: transparent url('../img/generation.png') no-repeat scroll 0% 0% / cover;
+}
+.googleaddsimg {
+    background: transparent url('../img/back.jpg') no-repeat scroll 0% 0% / cover;
+}
+.incloveImg{
+    background: transparent url('../img/inclov.png') no-repeat scroll 0% 0% / cover;
+}
+.kleetoimg {
+    background: transparent url('../img/kleeto.png') no-repeat scroll 0% 0% / cover;
+}
+.leadGenImg {
+    background: transparent url('../img/leadgeneration.jpg') no-repeat scroll 0% 0% / cover;
+}
+.portfolioIMG {
+    background: transparent url('../img/porfolioimg.jpg') no-repeat scroll 0% 0% / cover;
+}
+.resultIMG {
+    background: transparent url('../img/hompagejpg.jpg') no-repeat scroll 0% 0% / cover;
+}
+.trackingIMG{
+    background: transparent url('../img/analytics.jpg') no-repeat scroll 0% 0% / cover;
+}
+.imageInsection {
+    background-image:url('../img/backG.jpg');
+    /*background: transparent url('../img/backG.jpg') no-repeat scroll 0% 0% / cover;*/
+    height: auto;
+}
