@@ -1533,7 +1533,7 @@ a.text-dark:hover, a.text-dark:focus {
   color: #555;
   background-color: #fff;
   border: 1px solid #ced4da;
-  border-radius: 0rem;
+  border-radius: 1rem;
   -webkit-transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;

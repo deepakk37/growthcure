@@ -85,11 +85,15 @@
     <!-- intro end-->
     <!-- navbar-->
 
+
+
+
+
     <!-- about-->
     <!-- contact-->
-    <a class="bg-indigo alert d-block text-center text-white py-3" onclick="ga('send', 'event', 'Go Pro', 'Click', 'Alert under page header');" style="background-color:#6610f2!important;">
-      🎉 <strong>Limited offer!</strong> Get a Pro license and <strong>save up to $1.000</strong>. 🎉
-    </a>
+    <!--<a class="bg-indigo alert d-block text-center text-white py-3" onclick="ga('send', 'event', 'Go Pro', 'Click', 'Alert under page header');" style="background-color:#6610f2!important;">-->
+      <!--🎉 <strong>Limited offer!</strong> Get a Pro license and <strong>save up to $1.000</strong>. 🎉-->
+    <!--</a>-->
     <section id="contact" style="background-color: #fff;" class="text-page">
 
       <div class="container">
@@ -101,35 +105,26 @@
             <div class="row">
               <div class="col-lg-12">
                 <form id="contact-form" class="contact-form">
-                  <div class="form-row">
-                    <div class="form-group col-md-6">
-                      <label for="name">Name</label>
+                    <div class="form-group">
                       <input type="text" class="form-control" id="name" placeholder="Name" required>
                     </div>
-                    <div class="form-group col-md-6">
-                      <label for="email">Email</label>
+                    <div class="form-group">
                       <input type="email" class="form-control" id="email" placeholder="Email" required>
                         <div class="invalidemail" style="display:none;color:red;">Please enter the valid email</div>
                     </div>
-                  </div>
                     <div class="form-group">
-                        <label for="phoneno">Phone Number</label>
                         <input type="text" class="form-control" id="phoneno" placeholder="Phone Number">
                     </div>
                   <div class="form-group">
-                    <label for="company">Comapny</label>
                     <input type="text" class="form-control" id="company" placeholder="Company">
                   </div>
                   <div class="form-group">
-                    <label for="message">Message</label>
                     <textarea class="form-control" id="message" placeholder="Message"></textarea>
                   </div>
                   <div class="form-group">
-                    <label for="source">Where did you hear about us?</label>
-                    <input type="text" class="form-control" id="source">
-                  </div>
-                  <button type="button" onclick="apiCall()" class="btn btn-primary align-items-center customClassButton">Sign in</button>
+                  <button type="button" onclick="apiCall()" class="btn btn-primary align-items-center customClassButton btton-edit">Submit</button>
                     <div class="registration" style="display:none;color:green;font-weight: bold">Thanks for registration we will get back to you </div>
+                  </div>
                 </form>
               </div>
             </div>

@@ -597,3 +597,13 @@ a:hover {
     /*background: transparent url('../img/backG.jpg') no-repeat scroll 0% 0% / cover;*/
     height: auto;
 }
+.btton-edit {
+    width: 100%;
+    border-radius: 30px;
+    margin: 30px auto;
+    padding: 8px 18px;
+    font-size: 1.35em;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
