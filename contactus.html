@@ -32,7 +32,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
-    <section id="intro" style="background-image: url('img/contactpage.jpg')" class="intro contactImg">
+    <section id="intro" class="intro contactImg">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
           <div class="row">
@@ -112,6 +112,7 @@
                       <input type="email" class="form-control" id="email" placeholder="Email" required>
                         <div class="invalidemail" style="display:none;color:red;">Please enter the valid email</div>
                     </div>
+
                     <div class="form-group">
                         <input type="text" class="form-control" id="phoneno" placeholder="Phone Number">
                     </div>
@@ -184,10 +185,11 @@
                 document.getElementById("name").value = "";
                 document.getElementById("phoneno").value = "";
                 document.getElementById("email").value = ""
-                $(".registration").show();
-                setTimeout(function() {
-                    $(".registration").fadeOut(1500);
-                }, 3000);
+                swal(
+                    'Thanks!',
+                    'for reaching us',
+                    'success'
+                );
 
             }else{
                 $(".invalidemail").show();

@@ -12,7 +12,7 @@
     <!-- Font Awesome CSS-->
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <!-- Google fonts - Montserrat for headings, Cardo for copy-->
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
     <!-- Lightbox-->
     <link rel="stylesheet" href="vendor/lightbox2/css/lightbox.min.css">
     <!-- theme stylesheet-->
@@ -24,6 +24,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="owl-carousel/owl.carousel.css" rel="stylesheet">
     <link href="owl-carousel/owl.theme.css" rel="stylesheet">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
     <style type="text/css">
        body {
         font-family: 'Roboto', sans-serif;
@@ -151,12 +153,18 @@
               </div>
               <input type="text" class="form-control" id="message" placeholder="Message(Optional)" aria-label="Text input with radio button">
             </div>
+            <div class="input-group mb-4 registration" style="display:none;color:green;font-weight: bold">
+              <div class="input-group-prepend">
+                  <div>Thanks for registration we will get back to you </div>
+              </div>
+            </div>
           </div>
+
           <div class="modal-footer">
             <button type="button" onclick="apiCall()" class="btn btn-primary buttonCssColor">Send message</button>
           </div>
           </form>
-          <div class="registration" style="display:none;color:green;font-weight: bold">Thanks for registration we will get back to you </div>
+
         </div>
       </div>
     </div>
@@ -465,15 +473,14 @@
     <script language="javascript">
 
         function apiCall() {
-            alert("hi")
             var email = document.getElementById("email").value;
             if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
             {
-                var name = document.getElementById("name").value;
-                var phone =document.getElementById("phoneno").value;
+                var name = document.getElementById("name").value || "";
+                var phone =document.getElementById("phoneno").value || "";
 
-                var message = document.getElementById("message").value;
-                var company =document.getElementById("company").value;
+                var message = document.getElementById("message").value || "";
+                var company =document.getElementById("company").value || "";
                 var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,}
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", "https://www.growthcure.com/user/register", true);
@@ -483,10 +490,11 @@
                 document.getElementById("email").value = ""
                 document.getElementById("message").value = ""
                 document.getElementById("company").value = ""
-                $(".registration").show();
-                setTimeout(function() {
-                    $(".registration").fadeOut(1500);
-                }, 3000);
+                swal(
+                    'Thanks!',
+                    'for reaching us',
+                    'success'
+                );
 
             }else{
                 $(".invalidemail").show();
