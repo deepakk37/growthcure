@@ -42,13 +42,46 @@
       vertical-align: middle;
     }
   </style>
+  <style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.top-container {
+  background-color: #f1f1f1;
+  padding: 30px;
+  text-align: center;
+}
+
+.header {
+  padding: 10px 16px;
+  background: #555;
+  color: #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.stickyied {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0e0e0e;
+}
+
+.stickyied + .content {
+  padding-top: 102px;
+}
+</style>
   <!-- Tweaks for older IEs--><!--[if lt IE 9]>
   <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
   <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
 </head>
 <body>
 <section id="intro" class="intro trackingIMG">
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg" id="myHeader">
     <div class="container">
       <div class="row">
         <div class="col-lg-8 col-xs-8 col-sm-8 col-md-8">
@@ -301,19 +334,78 @@ Create Dashboards & Amazing Reports! Possibly the most standard tool for better 
   </div>
 </section> -->
 <!-- <div id="map"></div> -->
-<footer style="background-color: #111;">
-  <div class="container">
-    <div class="row copyright">
-      <div class="col-md-6">
-        <p class="mb-md-0 text-center text-md-left">&copy;2018 GrowthCure LLP</p>
+ <footer class="page-footer font-small indigo" style="background-color: #111;">
+
+    <!-- Footer Links -->
+ 
+      <!-- Grid row-->
+      <hr class="rgba-white-light" style="margin: 0 15%;">
+
+      <!-- Grid row-->
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+        <!-- Grid column -->
+        
+        <!-- Grid column -->
+
       </div>
-      <div class="col-md-6">
-        <p class="credit mb-md-0 text-center text-md-right">Designed By Growthcure</a></p>
-        <!-- Please do not remove the backlink to us. It is part of the licence conditions. Thanks for understanding :)-->
-      </div>
+      <!-- Grid row-->
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+
+      
+      <!-- Grid row-->
+
     </div>
-  </div>
-</footer>
+    <!-- Footer Links -->
+
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 "><a  class="fontColor">© 2018 Copyright:</a>
+      <a href="https://mdbootstrap.com/education/bootstrap/" class="fontColor">Growthcure LLP</a>
+    </div>
+    <!-- Copyright -->
+
+
+<!-- Grid row-->
+   <!-- Grid row-->
+      <div style="text-align: center;">
+
+        <!-- Grid column -->
+        <div class="col-md-12">
+
+          <div class="mb-5 flex-center">
+
+            <!-- Facebook -->
+            <a class="fb-ic">
+              <i class="fa fa-facebook-official fa-lg white-text mr-4 fontColor"> </i>
+            </a>
+            <!-- Twitter -->
+            <a class="tw-ic">
+              <i class="fa fa-twitter-square fa-lg white-text mr-4 fontColor"> </i>
+            </a>
+            <!-- Google +-->
+            <a class="gplus-ic">
+              <i class="fa fa-google-plus-circle fa-lg white-text mr-4 fontColor"> </i>
+            </a>
+            <!--Linkedin -->
+            <a class="li-ic">
+              <i class="fa fa-linkedin-square fa-lg white-text mr-4 fontColor"> </i>
+            </a>
+            <!--Instagram-->
+            <a class="ins-ic">
+              <i class="fa fa-instagram fa-lg white-text mr-4 fontColor"> </i>
+            </a>
+            <!--Pinterest-->
+            <a class="pin-ic">
+              <i class="fa fa-pinterest fa-lg white-text fontColor"> </i>
+            </a>
+
+          </div>
+
+        </div>
+        <!-- Grid column -->
+
+      </div>
+  </footer>
 <!-- JavaScript files-->
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/popper.js/umd/popper.min.js"> </script>
@@ -337,6 +429,20 @@ Create Dashboards & Amazing Reports! Possibly the most standard tool for better 
       });
   });
 
+</script>
+<script>
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+var stickyied = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > stickyied) {
+    header.classList.add("stickyied");
+  } else {
+    header.classList.remove("stickyied");
+  }
+}
 </script>
 </body>
 </html>
