@@ -1079,7 +1079,8 @@ h6,
 .h5,
 .h6 {
   margin-bottom: 0.5rem;
-  font-weight: 700;
+  font-weight: 400;
+  font-family: Montserrat,sans-serif!important;
   line-height: 1.44;
   color: inherit;
 /*  text-transform: uppercase;*/
@@ -1980,4 +1981,8 @@ code {
 .buttonCss a:hover{
   text-decoration: none !important;
   color:black !important;
+}
+.btn-primary:hover {
+  color: #fff;
+  border-color: white;
 }

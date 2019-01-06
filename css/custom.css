@@ -2,7 +2,7 @@
     opacity: 1;
     padding-top: 0px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: Montserrat,sans-serif!important;
     font-size: 70px;
     line-height: 89px;
     font-weight: 400;
@@ -265,6 +265,7 @@ section {
     opacity: 1;
     padding-top: 0px;
     text-align: center;
+    font-family: Montserrat,sans-serif!important;
     font-size: 54px;
     line-height: 62px;
     font-weight: 400;
@@ -295,6 +296,7 @@ section {
 
 nav.navbar {
   z-index: 12 !important;
+    border-bottom: 1px solid rgba(255,255,255,.15);
 }
 #intro{
   padding-top:15px !important;
@@ -448,6 +450,7 @@ a.social.linkedin {
 .textwrapper1 {
   opacity: 1;
   padding-top: 0px;
+    font-family: Montserrat,sans-serif!important;
   text-align: center;
   font-size: 50px;
   line-height: 68px;
