@@ -42,46 +42,18 @@
     vertical-align: middle;
 }
     </style>
-       <style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.top-container {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
-}
-
-.content {
-  padding: 16px;
-}
-
-.stickyied {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #0e0e0e;
-}
-
-.stickyied + .content {
-  padding-top: 102px;
-}
-</style>
+    <style>
+      .stickyied {
+        background-color: black !important;
+      }
+    </style>
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
   </head>
   <body>
     <section id="intro" class="intro leadGenImg">
-      <nav class="navbar navbar-expand-lg" id="myHeader">
+      <nav class="navbar navbar-expand-lg" id="myHeader" style="max-height: 60px; background-color: transparent;  position: fixed;top: 0; width: 100%;">
         <div class="container">
           <div class="row">
             <div class="col-lg-8 col-xs-8 col-sm-8 col-md-8">
@@ -103,12 +75,14 @@ body {
                   <a class="dropdown-item" href="lead-generation.html">Lead Generation</a>
                   <a class="dropdown-item" href="branding.html">Branding</a>
                   <a class="dropdown-item" href="tracking-and-analytics.html">Tracking & Analytics</a>
+                  <a class="dropdown-item" href="tracking-and-analytics.html"></a>
                 </div>
-
               </li>
               <li class="nav-item"><a href="portfolio.html" class="nav-link link-scroll fontColor">Portfolio</a></li>
               <!-- <li class="nav-item"><a href="#text" class="nav-link link-scroll">Text</a></li> -->
-              <li class="nav-item"><a href="contactus.html" class="nav-link link-scroll fontColor">Contact</a></li>
+              <!--<li class="nav-item"><a href="contactus.html" class="nav-link link-scroll fontColor">Contact</a></li>-->
+
+              <li class="nav-item"><a href="contactus.html" class="btn-small-white btn btn-very-small no-margin white-text text-small top-btn hide-mobile fontColor" style="background-color: #3b0086!important">Contact</a></li>
             </ul>
           </div>
         </div>
