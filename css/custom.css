@@ -535,8 +535,8 @@ a:hover {
 }
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 1.5rem;
-    padding-left: .5rem;
+      padding-right: 2.5rem;
+      padding-left: 0.5rem;
   }
 }
 

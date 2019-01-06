@@ -146,7 +146,7 @@ INTRO SECTION
 .content {
   position: relative;
   width: 100%;
-  top: 50%;
+  top: 65%;
   -webkit-transform: translate(0, -50%);
   transform: translate(0, -50%);
   -webkit-transition: all 0.3s;
@@ -308,9 +308,9 @@ STYLE SWITCHER FOR DEMO
 /*
  * 1. NAVBAR
  */
-.navbar {
-  padding: 0.5rem 1rem;
-}
+/*.navbar {*/
+  /*padding: 0.5rem 1rem;*/
+/*}*/
 
 .navbar-brand {
   display: inline-block;
