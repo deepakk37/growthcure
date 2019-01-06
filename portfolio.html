@@ -28,7 +28,6 @@
         font-family: 'Roboto', sans-serif;
       }
     </style>
-    <style>
       <style>
       .stickyied {
         background-color: black !important;
@@ -372,20 +371,19 @@
         }
     </script>
 
-
     <script>
-window.onscroll = function() {myFunction()};
+        window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-var stickyied = header.offsetTop;
+        var header = document.getElementById("myHeader");
+        var stickyied = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > stickyied) {
-    header.classList.add("stickyied");
-  } else {
-    header.classList.remove("stickyied");
-  }
-}
+        function myFunction() {
+          if (window.pageYOffset > stickyied) {
+            header.classList.add("stickyied");
+          } else {
+            header.classList.remove("stickyied");
+          }
+        }
 </script>
   </body>
 </html>
