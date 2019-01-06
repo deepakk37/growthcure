@@ -6,6 +6,7 @@
     font-size: 70px;
     line-height: 89px;
     font-weight: 400;
+    letter-spacing: -0.04em;
 }
 .fontColorBlue {
 	color: #3e92cc !important;
@@ -545,6 +546,7 @@ a:hover {
 
 .customClassButton {
   color: #fff !important;
+    background-color: #3e92cc;
 }
 
 .backImage{
