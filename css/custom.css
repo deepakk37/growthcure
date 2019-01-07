@@ -1,19 +1,28 @@
+/*.textwrapper {*/
+    /*opacity: 1;*/
+    /*padding-top: 0px;*/
+    /*text-align: center;*/
+    /*font-family: Montserrat,sans-serif!important;*/
+    /*font-size: 70px;*/
+    /*line-height: 89px;*/
+    /*font-weight: 400;*/
+    /*letter-spacing: -0.04em;*/
+/*}*/
 .textwrapper {
     opacity: 1;
     padding-top: 0px;
+    font-family: Montserrat, sans-serif !important;
     text-align: center;
-    font-family: Montserrat,sans-serif!important;
-    font-size: 70px;
-    line-height: 89px;
+    font-size: 50px;
+    line-height: 68px;
     font-weight: 400;
-    letter-spacing: -0.04em;
 }
 .fontColorBlue {
 	color: #3e92cc !important;
 }
 .alignCenter {
 	text-align: center;
-  margin-top:60px;
+  margin-top:30px;
 }
 
 .tiltbutton-wrap {
@@ -300,7 +309,7 @@ nav.navbar {
     border-bottom: 1px solid rgba(255,255,255,.15);
 }
 #intro{
-  padding-top:15px !important;
+  padding-top:0px !important;
 }
 
 .carousel-indicators {
