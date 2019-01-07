@@ -124,7 +124,7 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-center" id="exampleModalLabel">CONTACT US</h5>
+        <h5 class="modal-title text-center" id="exampleModalLabel">Contact Us</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -140,23 +140,25 @@
             <input type="text" placeholder="Name" id="name" class="form-control" aria-label="Text input with checkbox">
 
           </div>
-
+          <div class="invalidnam" style="display:none;color:red;">Please enter the valid Name</div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
                 <i class="fa fa-sitemap fa-2x"></i>
               </div>
             </div>
-            <input type="text" class="form-control" id="company" placeholder="Company" aria-label="Text input with radio button">
+            <input type="text" class="form-control" id="company" placeholder="Company" aria-label="Text input with radio button" >
           </div>
+          <div class="invalidcmp" style="display:none;color:red;">Please enter the Company Name</div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
                 <i class="fa fa-sitemap fa-2x"></i>
               </div>
             </div>
-            <input type="text" class="form-control" id="phoneno" placeholder="Phone Number" aria-label="Text input with radio button">
+            <input type="text" class="form-control" id="phoneno" placeholder="Phone Number" aria-label="Text input with radio button" >
           </div>
+          <div class="invalidph" style="display:none;color:red;">Please enter the valid Phone Number</div>
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <div class="input-group-text">
@@ -492,34 +494,63 @@
 
     function apiCall() {
         var email = document.getElementById("email").value;
-        if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
-        {
-            var name = document.getElementById("name").value || "";
-            var phone =document.getElementById("phoneno").value || "";
+        letters = /^[a-zA-Z ]{2,30}$/;;
+        ph = /^[0-9]{10}$/;
+        var name = document.getElementById("name").value;
+        var phone =document.getElementById("phoneno").value;
+        var company =document.getElementById("company").value ;
+        if (name.match(letters)){
+            if(company.trim()!=""){
+                if (phone.match(ph)) {
+                    if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email))
+                    {
+                        var name = document.getElementById("name").value || "";
+                        var phone =document.getElementById("phoneno").value || "";
 
-            var message = document.getElementById("message").value || "";
-            var company =document.getElementById("company").value || "";
-            var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,}
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", "https://www.growthcure.com/user/register", true);
-            xhr.send(JSON.stringify(myKeyVals));
-            document.getElementById("name").value = "";
-            document.getElementById("phoneno").value = "";
-            document.getElementById("email").value = ""
-            document.getElementById("message").value = ""
-            document.getElementById("company").value = ""
-            swal(
-                'Thanks!',
-                'for reaching us',
-                'success'
-            );
+                        var message = document.getElementById("message").value || "";
+                        var company =document.getElementById("company").value || "";
+                        var myKeyVals = { "name" : name, "phone" : phone, "email" : email,"message":message,"company":company,}
+                        var xhr = new XMLHttpRequest();
+                        xhr.open("POST", "https://www.growthcure.com/user/register", true);
+                        xhr.send(JSON.stringify(myKeyVals));
+                        document.getElementById("name").value = "";
+                        document.getElementById("phoneno").value = "";
+                        document.getElementById("email").value = "";
+                        document.getElementById("message").value = "";
+                        document.getElementById("company").value = "";
+                        swal(
+                            'Thanks!',
+                            'for reaching us',
+                            'success'
+                        );
 
+                    }else{
+                        $(".invalidemail").show();
+                        setTimeout(function() {
+                            $(".invalidemail").fadeOut(1500);
+                        }, 3000);
+                    }
+                }
+                else{
+                    $(".invalidph").show();
+                    setTimeout(function() {
+                        $(".invalidph").fadeOut(1500);
+                    }, 3000);
+                }
+            }
+            else{
+                $(".invalidcmp").show();
+                setTimeout(function() {
+                    $(".invalidcmp").fadeOut(1500);
+                }, 3000);
+            }
         }else{
-            $(".invalidemail").show();
+            $(".invalidnam").show();
             setTimeout(function() {
-                $(".invalidemail").fadeOut(1500);
+                $(".invalidnam").fadeOut(1500);
             }, 3000);
         }
+
 
     }
 </script>
