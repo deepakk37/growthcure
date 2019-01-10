@@ -607,6 +607,14 @@ a:hover {
 .trackingIMG{
     background: transparent url('../img/analytics.jpg') no-repeat scroll 0% 0% / cover;
 }
+
+
+.pokerbaaziImg{
+    background: transparent url('../img/laptoppo.png') no-repeat scroll 0% 0% / cover;
+}
+.trulymadlyImg{
+    background: transparent url('../img/laptop6.png') no-repeat scroll 0% 0% / cover;
+}
 .imageInsection {
     background-image:url('../img/back.jpg');
     /*background: transparent url('../img/backG.jpg') no-repeat scroll 0% 0% / cover;*/
